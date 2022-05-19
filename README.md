@@ -1,2 +1,2 @@
-# vurdering 2 Javascript bok
+# Ukesprosjekt i Utvikling.
  

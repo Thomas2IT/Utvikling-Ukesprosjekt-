@@ -1,12 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Setter filtypen som html-->
 <html>
-  <title>Intro</title>
+  <meta charset="UTF-8"> <!--tidssone-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Gjør slik at man kan bruke de fleste symboler og bokstaver-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--oppsett av formatet til html-en-->
+
+  <title>Intro</title> <!--Setter tittelen på siden som intro.-->
   <link rel="stylesheet" href="InteraktivSideStil.css"> <!--InteraktivSideStil fungerer fortsatt bra til denne oppgaven, ser ingen grunn til å bytte den. -->
-<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!--Bootstrap for bedre mobil tilgjenglighet-->
+  <head>
+  <script>
+  window.onload = oppstart;
+
+  function oppstart(){
+    alert("Velkommen til Unreal Engine Installasjons brukerveiledning. Les videre for instrukser om hvordan man bruker denne veiledningen.")
+  }
+  </script> <!--Oppretter en velkomst melding med Javascript-->
 </head>
 <body>
 
-  <ul>    
+  <ul>    <!--Liste på venstre side av websiden som man kan bruke for å gå til de forskjellige stegene.-->
     <li><a href="index.html">Intro</a></li>
           <li><a href="Steg1.html">Steg 1</a></li>
           <li><a href="Steg2.html">Steg 2</a></li>
@@ -20,8 +32,8 @@
   </ul>
 
 
-<div style="margin-left:25%;padding:1px 16px;height:1000px;">
-<a class="KnappRight" href="Steg1.html">Neste</a>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;"> <!--Bruker denne div-en for at oppsettet av siden skal se fint ut med listen til venstre. Uten så er innholdet av siden veldig nærme listen.-->
+<a class="KnappRight" href="Steg1.html">Neste</a> <!--Knapp, gjør det samme som å trykke på steget du vil ha på listen. Merk at jeg legger til enda en i alle html dokumentene etter denne.-->
 
 
 
@@ -29,9 +41,9 @@
   <h3>Dette er en interaktiv brukerveilednings webside hvor du lærer deg hvordan man installerer Unreal Engine på din PC slik at du kan benytte programmet i dine prosjekter</h3>
   <p>Innholdet på denne interaktive siden er delt opp i flere steg, hvor du starter på steg 1, og burde være ferdig med installasjonen innen det siste steget.</p>
   <figure>
-  <img class="center" src="Bilder\UnrealEngine.jpg" alt=""> </img>
-  <figcaption class="center">Unreal Engine logo</figcaption>  
-  </figure>
+  <img class="center" src="Bilder\UnrealEngine.jpg" alt=""> </img><!--Setter inn bilde-->
+  <figcaption class="center">Unreal Engine logo</figcaption>  <!--Bildetekst-->
+  </figure> <!--Gjør at bildene jeg legger inn kan ha bildetekst. Bildetekst er fint for kontekst til bildene.-->
   <h2>Hvordan bruke denne brukerveiledningen</h2>
   <p>På denne siden vil du se to knapper øverst på siden som du kan klikke for å gå fra et steg til det neste 
     I tillegg vil du se en steg oversikt på venstre side av websiden, så bruk den om det er et spesifikt steg du ønsker å gå til.
